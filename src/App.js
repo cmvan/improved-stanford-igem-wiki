@@ -1,40 +1,40 @@
+import React from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import * as Pages from './pages';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <Switch>
-        <Route exact path="/" component={Pages.Home} />
-        <Route exact path="/team" component={Pages.Team} />
-        <Route exact path="/attributions" component={Pages.Attributions} />
-        <Route exact path="/collaborations" component={Pages.Collaborations} />
-        <Route exact path="/communication" component={Pages.Communication} />
-        <Route exact path="/contribution" component={Pages.Contribution} />
-        <Route exact path="/description" component={Pages.Description} />
-        <Route exact path="/engineering" component={Pages.Engineering} />
-        <Route exact path="/experiments" component={Pages.Experiments} />
-        <Route exact path="/implementation" component={Pages.Implementation} />
-        <Route exact path="/notebook" component={Pages.Notebook} />
-        <Route exact path="/partnership" component={Pages.Partnership} />
-        <Route exact path="/proof-of-concept" component={Pages.ProofOfConcept} />
-        <Route exact path="/part-collection" component={Pages.PartCollection} />
-        <Route exact path="/improve" component={Pages.Improve} />
-        <Route exact path="/safety" component={Pages.Safety} />
-        <Route exact path="/human-practices" component={Pages.HumanPractices} />
-        <Route exact path="/education" component={Pages.Education} />
-        <Route exact path="/entrepreneurship" component={Pages.Entrepreneurship} />
-        <Route exact path="/inclusivity" component={Pages.Inclusivity} />
-        <Route exact path="/measurement" component={Pages.Measurement} />
-        <Route exact path="/model" component={Pages.Model} />
-        <Route exact path="/team" component={Pages.Team} />
-        <Route exact path="/software" component={Pages.Software} />
-        <Route exact path="sustainable" component={Pages.Sustainable} />
-        {/* TODO: Make better 404 not found page */}
-        <Route component={() => (<div>404 Not found </div>)} />
-      </Switch>
+    <Router basename={process.env.PUBLIC_URL}> {/* process.env.PUBLIC_URL */}
+      <Routes>
+        <Route path="/" element={<Pages.Home />} />
+        <Route path="team" element={<Pages.Team />} />
+        <Route path="attributions" element={<Pages.Attributions />} />
+        <Route path="collaborations" element={<Pages.Collaborations />} />
+        <Route path="communication" element={<Pages.Communication />} />
+        <Route path="contribution" element={<Pages.Contribution />} />
+        <Route path="description" element={<Pages.Description />} />
+        <Route path="engineering" element={<Pages.Engineering />} />
+        <Route path="experiments" element={<Pages.Experiments />} />
+        <Route path="implementation" element={<Pages.Implementation />} />
+        <Route path="notebook" element={<Pages.Notebook />} />
+        <Route path="partnership" element={<Pages.Partnership />} />
+        <Route path="proof-of-concept" element={<Pages.ProofOfConcept />} />
+        <Route path="part-collection" element={<Pages.PartCollection />} />
+        <Route path="improve" element={<Pages.Improve />} />
+        <Route path="safety" element={<Pages.Safety />} />
+        <Route path="human-practices" element={<Pages.HumanPractices />} />
+        <Route path="education" element={<Pages.Education />} />
+        <Route path="entrepreneurship" element={<Pages.Entrepreneurship />} />
+        <Route path="inclusivity" element={<Pages.Inclusivity />} />
+        <Route path="measurement" element={<Pages.Measurement />} />
+        <Route path="model" element={<Pages.Model />} />
+        <Route path="team" element={<Pages.Team />} />
+        <Route path="software" element={<Pages.Software />} />
+        <Route path="sustainable" element={<Pages.Sustainable />} />
+        <Route path="*" element={<Pages.Error />} />
+      </Routes>
     </Router>
   );
 }
