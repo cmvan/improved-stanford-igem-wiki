@@ -6,7 +6,7 @@ import * as Pages from './pages';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}> {/* process.env.PUBLIC_URL */}
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Pages.Home />} />
         <Route path="team" element={<Pages.Team />} />
