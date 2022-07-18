@@ -23,6 +23,7 @@ function App() {
         <Route path="partnership" element={<Pages.Partnership />} />
         <Route path="proof-of-concept" element={<Pages.ProofOfConcept />} />
         <Route path="part-collection" element={<Pages.PartCollection />} />
+        <Route path="parts" element={<Pages.Parts />} />
         <Route path="improve" element={<Pages.Improve />} />
         <Route path="safety" element={<Pages.Safety />} />
         <Route path="human-practices" element={<Pages.HumanPractices />} />
