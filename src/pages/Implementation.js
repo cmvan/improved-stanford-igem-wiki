@@ -1,7 +1,9 @@
-
+import Template from './Template';
 
 export default function Implementation() {
   return (
-    <h1>This is the Implementation Page</h1>
+    <Template>
+      <h1>This is the Implementation Page</h1>
+    </Template>
   );
 }

@@ -1,7 +1,9 @@
-
+import Template from './Template';
 
 export default function Home() {
   return (
-    <h1>This is the Home page</h1>
+    <Template>
+      <h1>This is the Home page</h1>
+    </Template>
   );
 }

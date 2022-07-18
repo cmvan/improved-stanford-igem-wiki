@@ -1,8 +1,10 @@
-
+import Template from './Template';
 
 export default function Attributions() {
   return (
-    <h1>This is the Attributions Page</h1>
+    <Template>
+      <h1>This is the Attributions Page</h1>
+    </Template>
   );
 }
 

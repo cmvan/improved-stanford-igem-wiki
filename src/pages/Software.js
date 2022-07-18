@@ -1,7 +1,9 @@
-
+import Template from './Template';
 
 export default function Software() {
   return (
-    <h1>This is the Software Page</h1>
+    <Template>
+      <h1>This is the Software Page</h1>
+    </Template>
   );
 }

@@ -1,7 +1,9 @@
-
+import Template from './Template';
 
 export default function Results() {
   return (
-    <h1>This is the Results Page</h1>
+    <Template>
+      <h1>This is the Results Page</h1>
+    </Template>
   );
 }

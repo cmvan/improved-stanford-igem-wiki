@@ -1,7 +1,9 @@
-
+import Template from './Template';
 
 export default function Engineering() {
   return (
-    <h1>This is the Engineering Page</h1>
+    <Template>
+      <h1>This is the Engineering Page</h1>
+    </Template>
   );
 }

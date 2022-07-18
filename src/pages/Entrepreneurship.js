@@ -1,7 +1,9 @@
-
+import Template from './Template';
 
 export default function Entrepreneurship() {
   return (
-    <h1>This is the Entrepreneurship Page</h1>
+    <Template>
+      <h1>This is the Entrepreneurship Page</h1>
+    </Template>
   );
 }

@@ -1,7 +1,9 @@
-
+import Template from './Template';
 
 export default function ProofOfConcept() {
   return (
-    <h1>This is the Proof of Concept Page</h1>
+    <Template>
+      <h1>This is the Proof of Concept Page</h1>
+    </Template>
   );
 }
