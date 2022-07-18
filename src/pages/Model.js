@@ -2,7 +2,7 @@ import Template from './Template';
 
 export default function Model() {
   return (
-    <Template>
+    <Template title="Model">
       <h1>This is the Model Page</h1>
     </Template>
   );
