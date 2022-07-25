@@ -12,7 +12,7 @@ export default function NavScroll() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse className="justify-content-end" id="navbarScroll">
           <Nav
-            style={{ maxHeight: '100px' }}
+            style={{ maxHeight: '80px' }}
             navbarScroll
           >
             <Nav.Link as={Link} to="/">Home</Nav.Link>
